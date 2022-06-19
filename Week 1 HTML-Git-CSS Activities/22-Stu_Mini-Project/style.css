@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Apple Chancery', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: burlywood;
+}
+
+header { 
+    text-align: right;
+    background-color: cornsilk;
+    padding: 20px;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    border-bottom: 20px solid rgb(22, 72, 42)
+}
+
+.links {
+    display: inline; 
+    text-decoration: none;
+    color: rgb(195, 107, 49);
+    font-size: 24px; 
+    padding: 15px;
+}
+
+main {
+    position: relative;
+}
+
+.main {
+    display: block;
+    margin: 0;
+    padding: 70px 0;
+    position: relative;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(195, 107, 49);
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 100px;
+    font-size: 50px;
+}
+
+img {
+    z-index: -10;
+    width: 100%; 
+    position: absolute;
+}
+
+p {
+    font-size: 100px;
+    color: rgba(143, 97, 128, 0.668);
+    position: absolute;
+    left: calc(50% - 270px);
+    top: 400px;
+}
+
+.contact-container {
+    position: relative;
+}

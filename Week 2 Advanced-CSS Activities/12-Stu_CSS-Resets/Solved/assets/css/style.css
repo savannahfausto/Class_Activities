@@ -34,10 +34,6 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
-  color: #fff;
-}
-
 main {
   display: flex;
   flex: 1 1 0;
@@ -86,36 +82,6 @@ footer {
   background-color: #13293d;
   color: #fff;
 }
-
-/* TODO: Add styles to display and hide the resource links */
-.resources .links {
-  display: none;
-}
-
-.resources:hover .links {
-  display: block;
-}
-
-/*makes h3 bigger*/
-.resources h3 {
-  font-size: 150%;
-}
-/* adds color to links and no text decoration*/
-.links a {
-  color: rgb(135, 13, 13);
-  text-decoration: none;
-}
-
-/*
-.links:hover a{
-  text-decoration: underline;
-}
-*/
-/* This one is correct, above one will underline all a's when hover over links; this one underlines individual links when hovers over each one*/
-.links a:hover{
-  text-decoration: underline;
-}
-
 
 @media screen and (max-width: 768px) {
   header, main {

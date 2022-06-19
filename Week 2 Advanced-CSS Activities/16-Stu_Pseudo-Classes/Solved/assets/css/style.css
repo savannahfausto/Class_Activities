@@ -87,35 +87,29 @@ footer {
   color: #fff;
 }
 
-/* TODO: Add styles to display and hide the resource links */
+/* Hide the resource links by default */
 .resources .links {
   display: none;
+  padding: 1% 0;
 }
 
+/* Display the links when the parent is in a hover state */
 .resources:hover .links {
   display: block;
 }
 
-/*makes h3 bigger*/
 .resources h3 {
   font-size: 150%;
 }
-/* adds color to links and no text decoration*/
+
 .links a {
-  color: rgb(135, 13, 13);
+  color: #772014;
   text-decoration: none;
 }
 
-/*
-.links:hover a{
+.links a:hover {
   text-decoration: underline;
 }
-*/
-/* This one is correct, above one will underline all a's when hover over links; this one underlines individual links when hovers over each one*/
-.links a:hover{
-  text-decoration: underline;
-}
-
 
 @media screen and (max-width: 768px) {
   header, main {
