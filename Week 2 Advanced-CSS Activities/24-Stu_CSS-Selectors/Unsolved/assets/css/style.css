@@ -68,7 +68,13 @@ footer {
   color: #fff;
 }
 
-/* TODO: Add code here to select all <a> elements that link to a file with a `.css` extension */
+/* adds a[href$=.css]::after to target anything in href ending in .css to have after it an emoji that displays inline with text and 3px of margin for spacing between the emoji and then link */
+
+a[href$='.css']::after {
+  content: '📝';
+  display: inline-block;
+  margin-left: 3px;
+}
 
 @media screen and (max-width: 768px) {
   header {
