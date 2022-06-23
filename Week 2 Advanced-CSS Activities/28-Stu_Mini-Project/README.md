@@ -1,56 +1,22 @@
-# Module 02 Mini-Project: CSS Snippet Cheat Sheet
+# Mini Challenge #2: CSS Snippet Cheat Sheet
 
-In this activity, you will work with a group to build a webpage that will hold a collection of CSS snippets. What better way to learn CSS than to build a knowledge base of CSS?
+The purpose of this weeks mini-challenge was to explore the different elements of advanced CSS and to create a reference for future use of specific CSS code. 
 
-## Instructions
+## In HTML: 
+I first started by making the layout of the page in HTML. In the head, I externally linked first the reset.css and then the style.style css. Then in the body of the HTML I added its direct children: a header, main and footer. According to the mock up it looks like the header contains an h1 heading and a paragraph blurb explaining the purpose of the webpage. 
 
-The completed application should meet the following criteria:
+Then in the main tag, one section was created that will essentially contain all 6 cards. Within the section I created a div. This div and all of its nested elements will eventually be copied 6 times (With the content of the elements changing based on the different snippets) to make 6 different snippet cards. To add more cards in the future, one would need to copy the first div under the section and its children elements. This div has children elements of: 
+ * A figure semantic element which will contain the heading of the card 
+ * Another div with a paragraph element giving a blurb about that card's particular code
+ * A pre element containing the specific code that is able to easily be highlighted upon clicking. 
 
-* As a user, I can view a collection of labeled CSS snippets in a responsive grid.
+Finally the footer will contain a "Thank you" message.
 
-* As a user, I can easily identify these CSS snippets by their headings.
+## In CSS: 
+The style.css file contains the styling for the page and demonstrates the use of flexbox properties, pseudo elements, pseud classes, variables, media queries with transition elements. 
 
-* As a user, I can highlight a code snippet by clicking on it.
+The CSS file contains comments for certain code within that file. 
 
-* As a user, I can view my application on a mobile device as well as a desktop.
+### Link to Webpage: 
 
-### Specifications
 
-* Must use semantic HTML elements and proper indentation.
-
-* Use CSS variables to maintain clean and reusable values for a color scheme.
-
-* Use flexbox and media queries to create a responsive grid layout.
-
-* Each CSS snippet should have a card-like layout with the CSS syntax wrapped in an [HTML pre element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre).
-
-* Each CSS snippet can easily be highlighted for copying on click using the [CSS user-select property](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select).
-
-* Must incorporate a background color using a [CSS linear-gradient function](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient).
-
-* Must incorporate a bit of animation using the [CSS transition property](https://developer.mozilla.org/en-US/docs/Web/CSS/transition).
-
-* You and your group can decide which CSS styles and colors you will use to design the application, but the app needs to be a responsive. Use the following images to gain an understanding of how the app should look at different screen sizes, from a layout perspective:
-
-  * At size 992px and above, the app should resemble the following image:
-
-    ![On a desktop, the application displays three CSS code snippets per row.](./Images/01-app-desktop.png)
-
-  * At size 768px and above, the app should resemble the following image:
-
-    ![On a tablet, the application displays two CSS code snippets per row.](./Images/02-app-tablet.png)
-
-  * On mobile devices, anything under 768px, the app should resemble the following image:
-
-    ![On a mobile device, the application displays one CSS code snippet per row.](./Images/03-app-mobile.png)
-
-## 💡 Hints
-
-* The HTML `<pre>` element is very literal about spaces and indentation. To gain a better understanding of how to work with it, check out this article on [considerations for styling the pre tag](https://css-tricks.com/considerations-styling-pre-tag/).
-
-## 🏆 Bonus
-
-* Set this project up in your own GitHub repositories so that you can deploy and use it for future reference!
-
----
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
