@@ -1,12 +1,12 @@
-// TODO: What does 'this' refer to?
+// TODO: What does 'this' refer to? window object
 console.log(this);
 
-// TODO: What does 'this' refer to?
+// TODO: What does 'this' refer to? window obect
 function helloThis() { 
    console.log("Inside this function, this is " + this); 
    }
 
-// TODO: What will this log? 
+// TODO: What will this log?  10 + 10 = 20
 var child = { 
    age: 10,
    ageTenYears: function() {
@@ -14,7 +14,7 @@ var child = {
    }
 };
 
-// TODO: What will this log? 
+// TODO: What will this log? 5000 * 1.15 = 5750
 var investor = {  
   name: "Cash Saver",
   investment: {
