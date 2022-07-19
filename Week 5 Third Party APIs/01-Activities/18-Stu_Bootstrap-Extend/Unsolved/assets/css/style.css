@@ -8,3 +8,47 @@
 
 /* Add your custom class style definitions here */
 /* HINT: Apply CSS variables using `var(--brown)` syntax as your property value */
+
+.navbar {
+background-color: var(--teal);
+}
+
+nav a {
+  color: var(--lightteal);
+}
+
+nav a:hover {
+  color: var(--light);
+}
+
+.jumbotron {
+  background-color: var(--lightteal);
+}
+
+.jumbotron h1, .jumbotron .lead {
+  color: var(--teal);
+}
+
+.btn-primary {
+  background-color: var(--brown);
+  border: var(--brown);
+}
+
+.btn-primary:hover {
+  background-color: var(--tan);
+  border: var(--tan);
+}
+
+::selection, .btn-primary:active {
+  background-color: var(--tan);
+  border: var(--brown);
+}
+
+.card-header {
+  background-color: var(--teal);
+  color: var(--light)
+}
+
+.card-text {
+  color: var(--brown);
+}
