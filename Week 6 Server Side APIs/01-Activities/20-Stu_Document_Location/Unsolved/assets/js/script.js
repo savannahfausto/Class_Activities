@@ -4,4 +4,10 @@ var redirectUrl = './404.html';
 fetch(badRequestUrl).then(function (response) {
   // Use a conditional to check the response status.
   // If that status equals the conditional, then redirect to the 404 page.
+  if (response.status !== 200) { // ===400
+    //document.location.href = "./404.html"; <-- this works but solved has:
+    document.location.replace(redirectUrl);
+  } else {
+    return response.json();
+  }
 });

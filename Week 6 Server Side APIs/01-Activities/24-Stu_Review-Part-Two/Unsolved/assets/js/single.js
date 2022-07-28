@@ -4,7 +4,7 @@ var limitWarningEl = document.querySelector('#limit-warning');
 
 var getRepoName = function () {
   // Where is this value coming from?
-  // TODO: Write your answer here
+  // This is coming from the URL search bar in the browser. It is what comes after the `?`
   var queryString = document.location.search;
   var repoName = queryString.split('=')[1];
 
@@ -14,7 +14,7 @@ var getRepoName = function () {
     getRepoIssues(repoName);
   } else {
     // Under what condition will this run?
-    // TODO: Write your answer here
+    // if there is no repo with the name the user enters. takes them to homepage
     document.location.replace('./index.html');
   }
 };
@@ -28,7 +28,7 @@ var getRepoIssues = function (repo) {
         displayIssues(data);
 
         // What is this checking for? Under what condition will this be `true`?
-        // TODO: Write your answer here
+        // Since GitHub only returns 30 results at a time, we check to see if there's more than 30 by looking for a next page URL in the response headers.
         if (response.headers.get('Link')) {
           displayWarning(repo);
         }
@@ -41,7 +41,7 @@ var getRepoIssues = function (repo) {
 
 var displayIssues = function (issues) {
   // Is there a difference between this and `!issues.length`?
-  // TODO: Write your answer here
+  // This will check for strict equality. Using `!issues.length` works, but only because JavaScript considers `0` to be `false`
   if (issues.length === 0) {
     issueContainerEl.textContent = 'This repo has no open issues!';
     return;
@@ -72,7 +72,7 @@ var displayIssues = function (issues) {
 };
 
 // What does this function do?
-// TODO: Write your answer here
+// if repo has more than 30 issues creates a link to go to that repo to see all issues instead of displaying only 30
 var displayWarning = function (repo) {
   limitWarningEl.textContent = 'To see more than 30 issues, visit ';
 
@@ -82,7 +82,7 @@ var displayWarning = function (repo) {
   linkEl.setAttribute('target', '_blank');
 
   // Where does this appear on the page?
-  // TODO: Write your answer here
+  // bottom of page
   limitWarningEl.appendChild(linkEl);
 };
 
